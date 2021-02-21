@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ramen_stall_tracker/src/app/locator.dart';
 import 'package:ramen_stall_tracker/src/app/router.gr.dart';
+import 'package:ramen_stall_tracker/src/screens/components/setup_bottom_sheet_ui.dart';
 import 'package:ramen_stall_tracker/src/screens/home_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:stacked_services/stacked_services.dart';
@@ -9,6 +10,7 @@ import 'src/app/router.gr.dart' as auto_router;
 
 void main() {
   setupLocator();
+  setupBottomSheetUi();
   runApp(MyApp());
 }
 
@@ -29,7 +31,6 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       navigatorKey: StackedService.navigatorKey,
-      // home: AddCardView(), // Used when testing a view
       initialRoute: Routes.homeScreen,
       onGenerateRoute: auto_router.Router().onGenerateRoute,
     );

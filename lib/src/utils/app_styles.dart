@@ -23,4 +23,20 @@ class AppStyles {
 
   static EdgeInsetsGeometry paddingSmallVertical =
       EdgeInsets.symmetric(vertical: sizeSmallPadding);
+
+  static SizedBox separateHeightLong = SizedBox(
+    height: sizeStandarPadding,
+  );
+
+  static SizedBox separateWidthLong = SizedBox(
+    width: sizeStandarPadding,
+  );
+
+  static SizedBox separateHeightShort = SizedBox(
+    height: sizeSmallPadding,
+  );
+
+  static SizedBox separateWidthShort = SizedBox(
+    width: sizeSmallPadding,
+  );
 }
